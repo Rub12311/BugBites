@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image with Gradient Text</title>
+    <style>
+        html, body {
+            height: 100%; 
+            padding: 0; 
+            margin: 0;
+        }
+
+        body {
+            background-image: url('images/cool-background.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-color: #f0f0f0;  
+           
+             
+
+        }
+
+        .header-text {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            padding: 20px; 
+            color: white;
+            text-align: center; 
+            font-size: 100px;  
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.455), 
+                rgba(255, 255, 255, 0.4) 
+            )
+        }
+        .overlay-image{
+            position: absolute; /* Corrected position */
+            right: 0px; /* Adjust as needed */
+            width: 210px; 
+            
+            z-index: 1; 
+           
+        } 
+        .text-box{
+            position:absolute;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            top:50%; 
+            left:50%; 
+            width: 60%; 
+            height: 30%;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 40px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        } 
+        .image-button{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-text">
+        Bug Bites
+    </div>
+    <Form name="" method="" action="">  
+        <input  Name="IB1" type = "Image" src="Images/camera.png" class="overlay-image">
+        
+        
+    </Form>
+    
+    <div class="text-box">
+     TEXT
+    </div>
+   
+   
+</body>
+</html>
